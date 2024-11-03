@@ -7,13 +7,14 @@ public class L2_1961 {
         for(int t=1; t<=test_case; t++){
             int num=sc.nextInt();
             int[][] num_print=new int[num][num];
+            int max_width=num-1, max_length=num-1;
 
             for(int i=0; i<num; i++)
                 for(int j=0; j<num; j++)
                     num_print[i][j]=sc.nextInt();
 
-            int max_width=num-1, max_length=num-1;
             System.out.println("#"+t);
+
             for(int i=0; i<num; i++){
                 for(int first=max_length; first>=0; first--){
                     System.out.print(num_print[first][i]);
