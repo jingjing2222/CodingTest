@@ -10,7 +10,7 @@ public class D3_11387 {
             long n=sc.nextInt();
             long total_damage=0;
             for(int i=0; i<n; i++){
-                total_damage+=d+(d*l*i)/100);
+                total_damage+=d+(d*l*i)/100;
             }
             System.out.printf("#%d %d\n",t,total_damage);
         }
